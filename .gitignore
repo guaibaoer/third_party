@@ -1,0 +1,16 @@
+# vi
+*.tags
+*.swp
+
+# osx
+*.DS_Store
+
+# backup
+*.bak
+
+# installed
+bin/
+include/
+lib/
+share/
+src/*/
