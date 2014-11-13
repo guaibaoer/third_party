@@ -22,8 +22,6 @@ function standard_routine {
 
 cd $src/glog*  && standard_routine
 cd $src/gflag* && standard_routine
-cd $src/proto* && standard_routine
 cd $src/gperf* && ./configure --prefix=$prefix --enable-frame-pointers && make -j && make install
-cd $src/gtest*/make && make && cp -r ../include/* $prefix/include/ && cp gtest_main.a $prefix/lib/libgtest_main.a
 cp -r $src/eigen*/Eigen $prefix/include/
 
